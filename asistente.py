@@ -1,0 +1,13 @@
+nombre=input("Soy tu asistente Alexa, si quieres hablar conmigo ingresa mi nombre:")
+x=nombre.split()
+y=x.count("Alexa")
+
+if y==1:
+    ayuda=input("Dime, ¿En que puedo ayudarte?")
+while y>1:
+  print("Tranquilo, solo di mi nombre una vez")
+  nombre=input("Soy tu asistente Alexa, si quieres hablar conmigo ingresa mi nombre:")
+  if nombre=='Alexa':
+    ayuda=input("Dime, ¿En que puedo ayudarte?")
+else:
+  print("no entiendo, porfavor di Alexa")
